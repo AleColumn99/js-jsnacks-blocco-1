@@ -1,19 +1,21 @@
 //inserisci la prima parola
-var primaParola = prompt('Inserisci una parola');
+var parola1 = prompt('Inserisci una parola');
 
 //inserisci la seconda parola
-var secondaParola = prompt('Inserisci un\'altra parola')
+var parola2 = prompt('Inserisci un\'altra parola')
 
 //confronta lunghezza
 var parolaLunga;
 var parolaCorta;
 
-if(primaParola.length <= secondaParola.length){
-  parolaCorta = primaParola;
-  parolaLunga = secondaParola;
+if(parola1.length == parola2.length){
+  alert('Le due parole hanno la stessa lunghezza!')
+}else if(parola1.length < parola2.length){
+  parolaCorta = parola1;
+  parolaLunga = parola2;
 }else{
-  parolaCorta = secondaParola;
-  parolaLunga = primaParola;
+  parolaCorta = parola2;
+  parolaLunga = parola1;
 }
 
 //stampa prima corta e poi lunga
